@@ -23,7 +23,7 @@ namespace ToDo.Infastructure.Repositories
         //    new ListOfTasks(Guid.NewGuid(), "List 3", "Description 3")
         //};
 
-        //private readonly ToDoContext _ctx = new ToDoContext();
+        private readonly ToDoContext _ctx = new ToDoContext();
         //private readonly IMapper _mapper;
 
         //protected ToDoContext _ctx;
@@ -38,11 +38,11 @@ namespace ToDo.Infastructure.Repositories
         //    _ctx = ctx;
         //}
 
-        protected ToDoContext _ctx;
-        public ListOfTasksRepository(ToDoContext ctx)
-        {
-            _ctx = ctx;
-        }
+        //protected ToDoContext _ctx;
+        //public ListOfTasksRepository(ToDoContext ctx)
+        //{
+        //    _ctx = ctx;
+        //}
 
         public async Task<ListOfTasks> GetAsync(Guid id)
         {
